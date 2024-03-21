@@ -1,0 +1,196 @@
+*{
+    font-family: "Poppins",sans-serif;
+
+}
+input, textarea, * {
+    caret-color: transparent;
+  }
+  * {
+    user-select: none;
+  }
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  body {
+  -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  }
+  *,
+      ::before,
+      ::after {
+          box-sizing: border-box;
+          border-width: 0;
+          border-style: solid;
+          border-color: #ffffff;
+      }
+
+      .nav {  
+  margin-top: 22px;
+}
+
+.nav-link:hover {
+  color: #ff0000;
+}
+.btn-5 {
+width: 130px;
+height: 40px;
+line-height: 42px;
+padding: 0;
+border: none;
+background: rgb(255,27,0);
+background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
+}
+.btn-5:hover {
+color: #f0094a;
+background: #ffffff;
+ box-shadow:none;
+}
+.btn-5:before,
+.btn-5:after{
+content:'';
+position:absolute;
+top:0;
+right:0;
+height:2px;
+width:0;
+background: #f0094a;
+box-shadow:
+ -1px -1px 5px 0px #fff,
+ 7px 7px 20px 0px #0003,
+ 4px 4px 5px 0px #0002;
+transition:400ms ease all;
+}
+.btn-5:after{
+right:inherit;
+top:inherit;
+left:0;
+bottom:0;
+}
+.btn-5:hover:before,
+.btn-5:hover:after{
+width:100%;
+transition:800ms ease all;
+}
+
+
+/* MEnU 📩📩📩 */
+.dropdown {
+    display: block; /* Initially hide the dropdown */
+    position: absolute;
+    top: 1px;
+    right: 3px;
+}
+
+#menuToggle {
+    display: block;
+    position: relative;
+    top: 50px;
+    right: 50px; /* Adjust as needed */
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+#menuToggle a {
+    text-decoration: none;
+    color: #232323;
+    transition: color 0.3s ease;
+}
+
+#menuToggle a:hover {
+    color: tomato;
+}
+
+#menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0; /* hide this */
+    z-index: 2; /* and place it over the hamburger */
+    -webkit-touch-callout: none;
+}
+
+#menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #cdcdcd;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+#menuToggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+}
+
+#menuToggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+#menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+#menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 100% 0%;
+    transform: translate(300%, 0); /* Adjust translation value as needed */
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+#menuToggle input:checked ~ .dropdown {
+    display: block; /* Show the dropdown when the input is checked */
+}
+
+#menuToggle input:checked ~ #menu {
+    transform: none; /* Slide the menu in from right to left */
+}
+progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 4px; /* Adjust the height of the progress bar */
+    background-color: red; /* Set the initial color of the progress bar */
+    width: 0; /* Initially set width to 0 */
+    z-index: 9999; /* Ensure the progress bar stays on top of other content */
+    transition: width 0.3s ease; /* Add transition for smoother width change */
+  }      

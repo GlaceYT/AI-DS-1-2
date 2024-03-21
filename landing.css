@@ -1,0 +1,276 @@
+*{
+  font-family: "Poppins",sans-serif;
+
+}
+input, textarea, * {
+  caret-color: transparent;
+}
+* {
+  user-select: none;
+}
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+-webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+*,
+    ::before,
+    ::after {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        border-color: #ffffff;
+    }
+.nav {
+margin-top: 22px;
+}
+
+.nav-link:hover {
+  color: red !important; /* Change color to red on hover */
+}
+/* SEC 1 */
+.btn-5 {
+width: 130px;
+height: 40px;
+line-height: 42px;
+padding: 0;
+border: none;
+background: rgb(255,27,0);
+background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
+}
+.btn-5:hover {
+color: #f0094a;
+background: #ffffff00;
+box-shadow:none;
+}
+.btn-5:before,
+.btn-5:after{
+content:'';
+position:absolute;
+top:0;
+right:0;
+height:2px;
+width:0;
+background: #f0094a;
+box-shadow:
+-1px -1px 5px 0px #fff,
+7px 7px 20px 0px #0003,
+4px 4px 5px 0px #0002;
+transition:400ms ease all;
+}
+.btn-5:after{
+right:inherit;
+top:inherit;
+left:0;
+bottom:0;
+}
+.btn-5:hover:before,
+.btn-5:hover:after{
+width:100%;
+transition:800ms ease all;
+}
+/* SEC 2 */
+.btn-7 {
+  background: linear-gradient(0deg, rgba(255,151,0,1) 0%, rgba(251,75,2,1) 100%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+  .btn-7 span {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .btn-7:before,
+  .btn-7:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: rgba(251,75,2,1);
+    box-shadow:
+     -7px -7px 20px 0px rgba(255,255,255,.9),
+     -4px -4px 5px 0px rgba(255,255,255,.9),
+     7px 7px 20px 0px rgba(0,0,0,.2),
+     4px 4px 5px 0px rgba(0,0,0,.3);
+    transition: all 0.3s ease;
+  }
+  .btn-7:before{
+     height: 0%;
+     width: 2px;
+  }
+  .btn-7:after {
+    width: 0%;
+    height: 2px;
+  }
+  .btn-7:hover{
+    color: rgba(251,75,2,1);
+    background: transparent;
+  }
+  .btn-7:hover:before {
+    height: 100%;
+  }
+  .btn-7:hover:after {
+    width: 100%;
+  }
+  .btn-7 span:before,
+  .btn-7 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: rgba(251,75,2,1);
+    box-shadow:
+     -7px -7px 20px 0px rgba(255,255,255,.9),
+     -4px -4px 5px 0px rgba(255,255,255,.9),
+     7px 7px 20px 0px rgba(0,0,0,.2),
+     4px 4px 5px 0px rgba(0,0,0,.3);
+    transition: all 0.3s ease;
+  }
+  .btn-7 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  .btn-7 span:after {
+    height: 2px;
+    width: 0%;
+  }
+  .btn-7 span:hover:before {
+    height: 100%;
+  }
+  .btn-7 span:hover:after {
+    width: 100%;
+  }
+  
+
+/* VIDEO 📩📩📩 */
+
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.video-container video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.landing-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  text-align: center;
+  color: white; /* Adjust text color to ensure readability */
+  padding: 20px;
+}
+
+.landing-content header {
+  margin-bottom: 20px;
+}
+
+.landing-content h1 {
+  font-size: 3rem;
+}
+
+.landing-content .lead {
+  font-size: 1.5rem;
+}
+
+.landing-content a.btn {
+  margin-top: 20px;
+}
+.landing-content {
+  display: none; /* Initially hide the landing content */
+}
+
+.delayed-display {
+  animation: fadeIn 1s ease-in-out forwards; /* Apply fade-in animation */
+}
+
+
+::-webkit-scrollbar {
+  width: 4px; /* Set the width of the scrollbar */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ff4000; 
+  border-radius: 50px; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c02e02;
+}
+
+/* Progress bar styles */
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1; 
+  }
+}
+
+
+.feature-icon-small {
+  position: relative;
+  top: 0;
+}
+.card-cover:hover {
+  filter: brightness(60%);
+  transition: filter 0.3s ease;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+#scrollProgressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px; 
+  background-color: #f0f0f0; 
+  z-index: 9999; 
+}
+#scrollProgress {
+  height: 100%;
+  background-color: #DC3545;
+  width: 0; 
+}
+.static-top-bar {
+  background-color: #fa273c; 
+  color: #fff; 
+  padding: 5px 0; 
+  text-align: center; 
+}

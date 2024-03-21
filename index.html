@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI&DS Club</title>
+    <link rel="icon" type="image/x-icon" href="./img/waidslogo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="landing.css"> 
+    <link rel="stylesheet" href="header.css"> 
+    <link rel="stylesheet" href="footer.css"> 
+    <link rel="stylesheet" href="mobile.css"> 
+    <link rel="stylesheet" href="scroll.css">
+    <link rel="stylesheet" href="syllabus.css">
+    <link rel="stylesheet" href="cursor.css">
+</head>
+<body>
+  <div class="static-top-bar">
+  </div>
+  <click-spark></click-spark>
+  
+ 
+  <button id="goToTopBtn" onclick="goToTop()"><i class="fas fa-arrow-up"></i></button>
+  <div id="scrollProgressBar">
+    <div id="scrollProgress"></div>
+</div>
+  <div id="preload-background"></div>
+  <div id="bkg" style="margin-bottom : 30px;">
+    
+    <nav>
+      <div class="logo" style="margin-top: 20px; margin-bottom : 10px;"><img src="./img/fulllogo.png" height="75" width="250"></div>
+      <div class="openMenu"style="color: rgb(0, 0, 0);" ><i class="fa fa-bars"></i></div>
+      <ul class="mainMenu">
+        <li><a href="./about.html" onclick="window.open(this.href);" >About</a></li>
+        <li><a href="./connect/chat.html" >Chat</a></li>
+        <li><a href="./syllabus.html" " >syllabus</a></li>
+        <li><a href="./cc.html"  >CURRICULUM</a></li>
+          <li><a href="https://sriindu.ac.in/contact-address/" onclick="window.open(this.href); return false;" >Contact</a></li>
+          <li><a href="https://sriindu.ac.in/overview/" onclick="window.open(this.href); return false;" >Academics</a></li>
+          <li><a href="./news.html" onclick="window.open(this.href); return false;" >Tech News</a></li>
+          <li><a href="./project.html" onclick="window.open(this.href); return false;" >Projects</a></li>
+         
+          <div class="closeMenu" style="color: rgb(255, 255, 255);"><i class="fa fa-times"></i></div>
+          <span class="icons">
+            <i class="fab fa-facebook" style="cursor: pointer;" onclick="window.open('https://m.facebook.com/SriInduGroupOfInstitution', '_blank');"></i>
+            <i class="fab fa-instagram" style="cursor: pointer;" onclick="window.open('https://www.instagram.com/sicet_aids_club', '_blank');"></i>
+             <i class="fab fa-youtube" style="cursor: pointer;" onclick="window.open('https://www.youtube.com/channel/UC0ecaNJHEc3Z2Tq5l5PVL8A', '_blank');"></i>
+              
+          </span>
+      </ul>
+  </nav>
+
+  <!-- LANDING PAGE -->
+  <div class="video-container">
+    <video autoplay muted>
+
+        Your browser does not support the video tag.
+    </video>
+    <!-- LANDING PAGE CONTENT --> 
+    <div class="landing-content delayed-display">
+        <header>
+            <h1 class="display-4" id="lanheader" style="color: rgb(255, 255, 255);"><b>Welcome to SICET</b></h1>
+            <p class="lead" id="lanheaderlead"> Artificial Intelligence & Data Science Department</p>
+            <button class="custom-btn btn-5" id="readMoreBtn"><span>Read More</span></button>
+        </header>
+    </div>
+</div>
+</div>
+<!-- SCROLLING -->
+<div class="container">
+  <hr>
+  <div class="breakingnews">
+    <article><span style="color: #DC3545; font-weight: bold;">UPCOMING EVENT :</span> Aarambh Event is going to be held on 22nd March, featuring both technical and non-technical events. If you are interested, please visit the events section and click Join!</article>
+  </div>
+  <hr>
+</div>
+
+
+<!-- AI SEC -->
+
+<section id="content">
+<div class="container my-5" id="aiSection">
+  <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+    <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+      <h2 class="display-4 fw-bold lh-1 text-body-emphasis mb-5" id="poai" >Power of Artificial Intelligence & Data Science</h2>
+
+      <p class="lead" id="poaii">Our AI & Data Science course for B.Tech students is designed to help you excel in today's fast-paced digital world. You'll learn essential tools and techniques in AI and Data Science, from basics to advanced applications. Through hands-on projects and interactive sessions, you'll gain practical skills in machine learning, deep learning, and more.</p>
+      <div class="d-grid gap-2 d-md-flex justify-content-md-start mb-4 mb-lg-3 mt-4">
+        <button type="button"  onclick="window.open('./about.html', '_blank')" class="btn btn-danger btn-lg px-4 me-md-2 fw-bold" id="learnmore">Learn More</button>
+      </div>
+    </div>
+    
+    <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg" id="mobaibox" style="  border-radius: 30px; ">
+      
+      <img class="rounded-lg-3 " id="mobai" src="./img/aimain.png" style="background-size: cover;"  width="428" height="428">
+    </div>
+    
+  </div>
+</div>
+</section>
+<!-- FEATURES -->
+
+<!-- EVENT -->
+<section id="featuresai">
+<div class="container px-4 py-5" id="custom-cards">
+    <h2 class="pb-2  text-center" >Features of AI & DS</h2 >
+      <hr>
+    <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-size : cover ; background-image: url('./img/ml.png');"> 
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Machine Learning & Deep Learning</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-size : cover ;background-image: url('./img/nlp.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Natural Language Processing</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-size : cover ;background-image: url('./img/bgdata.jpg');">
+          <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+            <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Cutting Edge Big Data Analytics</h3>
+            <ul class="d-flex list-unstyled mt-auto">
+             
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- GLANCE -->
+<div class="container">
+  <h2 class="pb-2  text-center mb-5" >AI & DS Club at Glance</h2>
+  <hr>
+<div class="row align-items-md-stretch">
+  
+  <div class="col-md-6">
+    <div class="h-100 p-5 text-bg-dark rounded-3 mt-1">
+      <h2>VISION</h2>
+      <p>The vision for AI & DS is to use technology to improve our lives. It's about making machines smarter so they can help us solve problems faster and make better decisions. We want AI & DS to be accessible to everyone and used responsibly to benefit society</p>
+      <button class="btn btn-outline-light" onclick="window.open('./pdf/vision1.pdf', '_blank')" >Learn More</button>
+    </div>
+  </div>
+  <div class="col-md-6" >
+    <div class="h-100 p-5 bg-body-tertiary mt-2" style="border : solid 3.5px #ff4000; border-radius : 10px; " >
+      <h2>MISSION</h2>
+      <p>Our mission in AI & DS is to use technology and data to solve problems and make life better for everyone. We want to educate and empower people with the skills they need to make a difference, and to create solutions that have a positive impact on society.</p>
+      <button class="btn btn-danger" onclick="window.open('./pdf/mission2.pdf', '_blank')"  >Learn More</button>
+    </div>
+  </div>
+</div>
+</div>
+  <!-- EVENTS -->
+  <section id="eventspage">
+  <div class="container px-4 py-5" id="hanging-icons">
+    <h2 class="pb-2  text-center mt-5" >Events</h2>
+    <hr>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+      <div class="col d-flex align-items-start mb-5">
+        <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis" style="color: rgb(255, 0, 0) !important;">Aarambh</h3>
+          <p>Join us for the AI & DS Club's event, Aarambh ! Get ready for an exciting journey into the world of artificial intelligence and data science.</p>
+          <p>📢 <b>Date :</b> 22/03/2024</p>
+          <a href="https://forms.gle/zq3j4snCkuXiCayu6" class="btn btn-primary" target="_blank">
+            Join Now!
+          </a>
+          <a href="./event.html" class="btn btn-success" target="_blank" style="margin-left: 10px;">
+            About Event
+          </a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis" style="color: rgb(255, 0, 0) !important;">Annual Day</h3>
+          <p>Save the date and be part of this remarkable and unforgettable special occasion as we come together to commemorate another successful year!</p>
+          <p><b>Date :</b> Updated Soon!</p>
+          <a onclick="window.open('./404.html', '_blank')" class="btn btn-secondary">
+            Upcoming..
+          </a>
+        </div>
+      </div>
+      <div class="col d-flex align-items-start">
+        <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+          
+        </div>
+        <div>
+          <h3 class="fs-2 text-body-emphasis" style="color: rgb(255, 0, 0) !important;">Technotsav</h3>
+          <p>Technotsav promises innovation, inspiration, and boundless excitement for everyone. Don't miss out on this opportunity to experience the future firsthand. See you at Technotsav!</p>
+          <p><b>Date :</b> Updated Soon!</p>
+          <a onclick="window.open('./404.html', '_blank')"  class="btn btn-secondary" id="primaryButton">
+            Upcoming..
+        </a>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </div>
+</section>
+<!-- JJK -->
+<div class="container">
+  <h1 class="text-center" style="margin-top : -20px;"> STATS</h1>  
+  <div class="bgstatcolor">  
+  
+    <div class="counter-container">
+      <h2 id="c1">COURSES</h2>
+      <div class="counter" id="counter1">0</div>
+    </div>
+
+    <div class="counter-container">
+      <h2 id="c2">STUDENTS</h2>
+      <div class="counter" id="counter2">0</div>
+    </div>
+
+    <div class="counter-container">
+      <h2 id="c3">FACULTY</h2>
+      <div class="counter" id="counter3">0</div>
+    </div>
+
+    <div class="counter-container">
+      <h2 id="c4">EVENTS</h2>
+      <div class="counter" id="counter4">0</div>
+    </div>
+   
+  </div>
+  <hr style="margin-bottom : 50px; ">
+</div>
+
+<!-- CHAIRMAN -->
+<div class="container marketing">
+
+
+    <div class="row featurette mt-5">
+      <div class="col-md-7 ">
+        <h2 class="featurette-heading display-5 fw-normal lh-1 mb-5 " id="chairhead">Message From <span style="color :#DC3545;"> Chairman</span></h2>
+        <p class="lead mt-3" id="chairtxt">It gives me joy unspeakable to affirm that Sri Indu group of institutions, having completed 39 years Sucessfully, has grown into one of the best institutions in the one of the leading Groups in Hyderabad, Telangana. Our Institute is an Autonomous Institutions under UGC, Recognized under 2(f) and 12(B) of UGC Act 1956, approved by the All India Council of Technical Education (AICTE), NBA Accredited, NAAC in pipeline and An ISO 9001 : 2000 Certified College and Permanently Affiliated to JNTUH.<br><br>As everyone is aware of the fact that there is unprecedented advancement in the academic research and industry. Without an iota of doubt, it is to be admitted that the field of engineering and technology has undergone radical changes.<br><br> <b style="color: #DC3545;font-weight : 600;">~ Sri. R. Venkat Rao</b></p>
+      </div>
+      <div class="col-md-5 col-sm-12 " >
+       <img id="chaimg" src="./img/chairmansir.png">
+      </div>
+    </div>
+
+    <hr>
+</div>
+<!-- SECERATERY -->
+<div class="container">
+<div class="row featurette">
+  <div class="col-md-7 order-md-2 mt-2 mb-5" >
+    <h2 class="featurette-heading display-5 fw-normal lh-1 mb-5 mt-1" id="sechead" >Message from <span style="color :#DC3545;"> Secretary</span></h2>
+    <p class="lead" id="sectxt">It is my personal observation that the students are perhaps at the most difficult crossroads of their life after their intermediate examinations. The decision they make at this juncture is going to have a long lasting impact on their future life and career.
+    <br><br>Our well-equipped laboratories such as laboratories with the computers having high-end configuration, the internet facility, Wi-fi enabled Campus state of the art library with national and international journals and magazines certainly create a congenial ambience for an ideal engineer in the making to grow. <br> <br><b style="color: #DC3545; font-weight : 600;" >~ Sri. R. Anup Chakravarthy</b>
+  </div>
+  <div class="col-md-5 col-sm-12">
+    <img  id="secimg" src="./img/secretarysir.png" >
+  </div>
+</div>
+<hr>
+</div>
+
+<!-- PRINCIPAl -->
+<div class="container marketing">
+
+
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading display-5 fw-normal lh-1 mb-5 mt-1" id="chairhead">Message From <span style="color :#DC3545;"> Principal</span></h2>
+      <p class="lead mt-3" id="chairtxt">Dr.G. Suresh, a zealous teacher and an administrator, has a 19 years of experience in teaching, research, and institutional development. He has published two patents, supervisor of two Universities, authored a textbook, and published more than 35 papers in refereed international journals and conferences. As the Principal of Sri Indu College of Engineering and Technology (SICET), he envisions the importance of engineering education wherein the students learn, apply and develop innovative solutions & products that solve the problems of societal needy.<br><br> <b style="color: #DC3545;font-weight : 600;">~ Dr. G. Suresh</b></p>
+    </div>
+    <div class="col-md-5 col-sm-12 " >
+     <img id="chaimg" src="./img/principalsir.png">
+    </div>
+  </div>
+
+  <hr>
+</div>
+
+<!-- <div class="container mt-2"> -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <h2 class="featurette-heading display-4 text-center mb-4" id="techname">TECHASTRA'23</h2>
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3" class="active" aria-current="true"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item">
+          <img src="./img/c1.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./img/c2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item active">
+          <img src="./img/c3.png" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+  <footer class="footer-section">
+    <div class="container">
+        <div class="footer-cta pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-md-4 mt-5 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-map-marker-alt "></i>
+                        <div class="cta-text ">
+                            <h4>Find us</h4>
+                            <span> Sheriguda, Ibrahimpatan.</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mt-5 mb-30">
+                    <div class="single-cta">
+                        <i class="fas fa-phone"></i>
+                        <div class="cta-text ">
+                            <h4>Contact Us</h4>
+                            <span>+91 9347306999</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4 mt-5 mb-30">
+                    <div class="single-cta">
+                        <i class="far fa-envelope-open"></i>
+                        <div class="cta-text ">
+                            <h4>Mail us</h4>
+                            <span>sicetaids@gmail.com</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-content pt-5 pb-5">
+            <div class="row">
+                <div class="col-xl-4 col-lg-4 mb-50">
+                    <div class="footer-widget">
+                        <div class="footer-logo">
+                            <a href="index.html"><img src="./img/fulllogo.png" class="img-fluid" alt="logo"></a>
+                        </div>
+                        <div class="footer-text">
+                            <p>Our commitment to excellence extends beyond the classroom, guiding every aspect of our approach at Sri Indu College. We understand that our students are the future leaders, innovators, and change-makers of tomorrow.</p>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="col-xl-4 col-lg-4 col-md-6 mb-30" id="usefull">
+                    <div class="footer-widget">
+                        <div class="footer-widget-heading">
+                            <h3>Useful Links</h3>
+                        </div>
+                        <ul>
+                          <li><a href="https://sriindu.ac.in/" onclick="window.open(this.href); return false;" >Official Website</a></li>
+                          <li><a href="https://sriindu.ac.in/contact-address/" onclick="window.open(this.href); return false;" >Contact</a></li>
+                          <li><a href="https://sriindu.ac.in/overview/" onclick="window.open(this.href); return false;" >Academics</a></li>
+                          <li><a href="./about.html">About</a></li>
+                          <li><a href="https://sriindu.ac.in/admissions-criteria/" onclick="window.open(this.href); return false;" >Admissions</a></li>
+                          <li><a href="./syllabus.html">syllabus</a></li>
+                          <li><a href="./cc.html" target="_blank">Curriculum</a></li>
+                          <li><a href="./gallery.html" target="_blank">Gallery</a></li>
+                        </ul>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+    </div>
+    <div class="copyright-area">
+        <div class="container ">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 text-lg-left col-md-6 col-lg-12"  >
+                    <div class="copyright-text " id="copyrightt" >
+                      <p>Copyright &copy; 2024, All Rights Reserved to <a href="mailto:sicetaids@email.com">AI&DS</a> Club.</p>
+
+                    </div>
+                </div>
+        
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="./scroll.js"></script>
+<script src="script.js"></script>
+<script src="cursor.js"></script>
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</html>

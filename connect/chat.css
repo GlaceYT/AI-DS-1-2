@@ -1,0 +1,414 @@
+* {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: url('https://cdn.discordapp.com/attachments/1217829515770728478/1220450621568716810/chatbg.jpg?ex=660efc37&is=65fc8737&hm=4a0e206d75c660641923753f067e95adfec219a612492461bcf6c42adcc76126&');
+  background-size: cover;
+  background-position: center;
+}
+
+#loading-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+#loading-screen video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the video covers the entire screen */
+  background-color: rgb(255, 255, 255); /* Set the background color to match your loading screen background */
+}
+  /* =================================================================*/
+
+  #introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+  }
+  
+  #video-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+  
+  #loopVideo {
+    display: none; 
+  }
+  
+
+#login-box {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(173, 216, 230, 0);
+    text-align: center;
+    max-width: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#login-box img {
+    max-width: 300px;
+}
+
+#login-box h1 {
+  cursor: pointer;
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0;
+  text-transform: uppercase;
+  color: transparent; 
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  letter-spacing: 2px;
+  background: linear-gradient(45deg, #ffffff, #ffffff); 
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+
+
+#usernameInput {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgb(222, 67, 0);
+  border-radius: 10px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  text-align: center; /* Center text horizontally */
+  text-indent: 0; /* Reset text indent to center it vertically */
+}
+
+#usernameInput::placeholder {
+  text-align: center;
+  font-weight: 300; 
+  color: #fff;
+}
+
+
+#usernameInput:hover {
+    background-color: #d58d49;
+    color: #fff;
+    border-color: #0056A4;
+}
+
+#startButton {
+    width: 100%;
+    background-color: #ffffff;
+    color: #080710;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+#startButton:hover {
+    background-color: #0056A4;
+    color: #fff;
+}
+  
+
+  
+  /* =================================================================*/
+  
+  #chat-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    padding: 20px; 
+    background-image: url(''); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Prevent background image repetition */
+    color: #fff; /* Set default text color to white */
+    font-family: Arial, sans-serif; /* Choose a professional font family */
+  }
+  
+
+  
+  #chat {
+    background: rgba(0, 0, 0, 0.7); /* Add a semi-transparent background to the chat area */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 70%; /* Limit the width of the chat area */
+    overflow-y: auto;
+  }
+  
+  #chat::-webkit-scrollbar {
+    width: 10px; /* Customize scrollbar width */
+  }
+  
+  #chat::-webkit-scrollbar-thumb {
+    background: #0074D9; /* Color for the scrollbar thumb */
+    border-radius: 5px;
+  }
+  
+  #chat {
+    text-align: left;
+    margin-bottom: 1px;
+    border: none; /* Remove the border */
+    background-color: transparent; /* Make the chat box transparent */
+    padding: 10px;
+    flex-grow: 1;
+    width: 100%;
+    max-height: calc(100vh - 50px);
+    overflow-y: auto;
+    color: white;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Use iPhone-like font */
+    animation: fadeIn 1s; /* Add fade-in animation to the text */
+    transition: transform 0.3s ease; 
+  }
+  
+  #chat-container h1 {
+    cursor: pointer;
+    font-size: 36px; /* Increase font size */
+    color: black; /* Set text color to transparent */
+    font-weight: bold;
+    margin-bottom: 10px;
+    animation: fadeIn 1s;
+    background-color: white; 
+    display: inline-block; /* Make it a block element to cover the entire width */
+    padding: 10px; /* Add padding for a bigger size */
+    border-radius: 10px; /* Add rounded borders */
+  }
+  
+  .message-container {
+    background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 13px;
+    margin-bottom: 10px; /* Add some space between messages */
+    max-width: 70%; /* Limit the width of the message container */
+    position: relative; /* Position relative for absolute positioning */
+    word-wrap: break-word; /* Ensure long words are broken and wrap to next line */
+  }
+  
+  .message-content {
+    color: white; /* Text color */
+    margin-bottom: 5px; /* Add some space between username and message */
+    max-width: 100%; /* Ensure text doesn't exceed 70% width of parent container */
+  }
+  
+  .message-timestamp {
+    margin-top: 1px;
+    position: absolute; /* Position the timestamp absolutely */
+    bottom: 0; /* Align to the bottom */
+    left: 10px; /* Add some padding from the left */
+    color: #888; /* Timestamp color */
+    font-size: 12px; /* Timestamp font size */
+  }
+
+ 
+  .message-container.vsvcvm1 .message-content {
+  color: #ff5733; 
+}
+
+.message-container.vsvcvm2 .message-content {
+  color: #33ff57; 
+}
+
+.message-container.vsvcvm3 .message-content {
+  color: #ffe100; 
+}
+
+  
+  
+  
+  #messageInput {
+    display: block;
+  height: 50px;
+  width: 93%;
+  background-color: rgb(246, 246, 246);
+  border-radius: 20px;
+  padding: 0 200px;
+  margin-top: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  text-align: center; /* Center text horizontally */
+  text-indent: 0;
+    
+  }
+  #messageInput:hover {
+    background-color: #cccecfdf; 
+    color: #fff; 
+    border-color: rgba(137, 140, 143, 0.526); 
+  }
+  
+  #sendButton {
+    font-size: 18px;
+   font-weight: 500;
+   border-radius: 20px;
+   width: 30%;
+   margin-top: 8px;
+   margin-bottom: 8px;
+   color: #ffffff;
+   background-color: #de35ab;
+   height: 78%;
+   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    padding: 15px 10px;
+
+ }
+  
+  #sendButton:hover {
+    background-color: #8bc1f3;
+    color: #fff;
+  }
+  .message {
+    color: #fff;
+    margin: 5px 0;
+  }
+
+
+ 
+  #chat-header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: transparent;
+    color: #fff;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  background: linear-gradient(to bottom, #297fb900, rgba(41, 127, 185, 0));
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+nav .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  max-width: 90%;
+  margin: auto;
+}
+
+nav .navbar .logo a {
+  color: #fff;
+  font-size: 27px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+nav .navbar .menu {
+  display: flex;
+}
+
+.navbar .menu li {
+  list-style: none;
+  margin: 0 15px;
+}
+
+.navbar .menu li a {
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  text-decoration: none;
+}
+   @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
+  
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap");
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+  }
+  body {
+    background: linear-gradient(to bottom, #5d326c, #350048);
+  }
+  
+  .prelogin-body {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1; 
+    transition: opacity 2s ease-in-out; 
+  }
+  
+  .container {
+    width: 1000px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 40px;
+  }
+  .container .btn {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 50px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+

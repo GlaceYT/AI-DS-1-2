@@ -1,0 +1,86 @@
+input, textarea, * {
+  caret-color: transparent;
+}
+* {
+  user-select: none;
+}
+@media only screen and (max-width: 455px) {
+    /* For mobile phones: */
+    
+    html, body {
+      overflow-x: hidden;
+  }
+    #mobai{
+        display: flex;
+         justify-content: flex-start;
+        align-items: left;
+       margin-right: 30px;
+    }
+    #usefull{
+      margin-left: 10px;
+    }
+    ::-webkit-scrollbar {
+      width: 0px; 
+    }
+    #lanheader {
+      font-size: 13px; 
+    }
+    
+    #lanheaderlead {
+      font-size: 9px;
+    }
+    .landing-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+      text-align: center;
+      color: white; /* Adjust text color to ensure readability */
+      padding: 10px;
+    }
+    .video-container {
+   
+      height: 50vh;
+  
+    }
+  #mobaibox{
+    margin-bottom: 20px;
+  }
+  /* Chairman & Secretary */
+  #chaimg{
+    width: 385px;
+    height: 400px;
+  }
+  #secimg{
+    width: 385px;
+    height: 400px;
+  }
+  #chairtxt{
+    font-size: 15px;
+  }
+  #sectxt{
+    font-size: 15px;
+  }
+  #chairhead{
+    font-size: 30px;
+  }
+  #sechead{
+    font-size: 30px;
+  }
+  /* AI SEC 1 */
+  #poai{
+    font-size: 28px;
+  }
+  #poaii{
+    font-size: 18px;
+  
+  }
+  
+}
+@media only screen and (min-width: 456px) {
+  #copyrightt{
+    margin-left: 450px;
+  }
+
+}

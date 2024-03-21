@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+  <title>About AI & DS</title>
+  <link rel="icon" type="image/x-icon" href="./img/waidslogo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="./about.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> 
+  <style>
+    *{
+      font-family: "Poppins",sans-serif;
+  }
+    ::-webkit-scrollbar {
+      width: 5px; /* Set the width of the scrollbar */
+    }
+    
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #f1f1f100; /* Set the color of the scrollbar track */
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #ff4000; /* Set the color of the scrollbar handle */
+      border-radius: 50px; /* Set the border radius of the scrollbar handle */
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #c02e02; /* Set the color of the scrollbar handle on hover */
+    }
+    
+
+
+  </style>
+</head>
+<body>
+  <div class="page-wrapper">
+    <div class="nav-wrapper">
+     <div class="grad-bar"></div>
+  
+     </div>
+     <section class="headline">
+       <h1>About Artifical Intelligence & Data Science</h1>
+       <p>Transforming Data into Intelligence</p>
+     </section>
+     <section class="features">
+       <div class="feature-container">
+         <img src="./aai/mal.jpg" alt="Flexbox Feature">
+         <h2 style="color : #DC3545; font-weight :600;">MACHINE LEARNING</h2>
+         <p>Machine learning is the key to unlocking this potential, empowering machines to analyze data, recognize patterns, and make decisions without explicit programming.</p>
+       </div>
+       <div class="feature-container">
+         <img src="./aai/bg.jpg" alt="Flexbox Feature">
+         <h2 style="color : #DC3545; font-weight :600;">DATA MINING</h2>
+         <p>Delving into the vast digital landscapes, data mining is the modern-day gold rush of extracting valuable insights from mountains of raw data.</p>
+       </div>
+       <div class="feature-container">
+         <img src="./aai/dl.jpg" alt="Flexbox Feature">
+         <h2 style="color : #DC3545; font-weight :600;">DEEP LEARNING</h2>
+         <p>Enter the realm of artificial intelligence where machines mimic the complex neural networks of the human brain.</p>
+       </div>
+     </section>
+     <section class="features">
+      <div class="feature-container">
+        <img src="./aai/stat.jpg" alt="Flexbox Feature">
+        <h2 style="color : #DC3545; font-weight :600;">STATISTICAL ANALYSIS</h2>
+        <p>In the sea of data, statistical analytics acts as a guiding star, illuminating meaningful insights and trends amidst the noise. </p>
+      </div>
+      <div class="feature-container">
+        <img src="./aai/nllp.png" alt="Flexbox Feature">
+          <h2 style="color : #DC3545; font-weight :600;">NLP</h2>
+        <p>Unlocking the power of human language, natural language processing (NLP) bridges the gap between machines and humans in communication. </p>
+      </div>
+      <div class="feature-container" id="dip">
+        <img src="./aai/imgg.png" alt="Flexbox Feature">
+        <h2 style="color : #DC3545; font-weight :600;">DIGITAL IMAGE PROCESSING</h2>
+        <p>Step into the realm of pixels and algorithms where digital image processing breathes life into visual data. 
+        </p>
+      </div>
+      </section>
+   </div>
+
+</body>
+<script>
+  $("#search-icon").click(function() {
+    $(".nav").toggleClass("search");
+    $(".nav").toggleClass("no-search");
+    $(".search-input").toggleClass("search-active");
+  });
+  
+  $('.menu-toggle').click(function(){
+     $(".nav").toggleClass("mobile-nav");
+     $(this).toggleClass("is-active");
+  });
+  
+</script>
+</html

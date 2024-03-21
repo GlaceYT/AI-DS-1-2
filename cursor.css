@@ -1,0 +1,17 @@
+/* Demo styles */
+  
+  label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    user-select: none;
+    color: #DC3545;
+}
+
+.red-color-indicator {
+    --size: 2em;
+    height: var(--size);
+    width: var(--size);
+    border-radius: 50%;
+    background-color: #DC3545;
+}
